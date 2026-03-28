@@ -3,171 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Лучшие Фотоэкскурсии в Хабаровске</title>
-    <meta name="title" content="Лучшие Фотоэкскурсии в Хабаровске">
-    <meta name="description" content="Лучшие Фотоэкскурсии в Хабаровске на 2026 год">
-    <meta name="author" content="Валентина Плотникова">
-    <meta name="keywords" content="Лучшие Фотоэкскурсии в Хабаровске Лучшие Фотоэкскурсии в Хабаровске на 2026 год">
-    
-    <!-- Webmaster Verification -->
+
+    <title>{{ARTICLE_TITLE}}</title>
+    <meta name="title" content="{{ARTICLE_TITLE}}">
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR_NAME}}">
+    <meta name="keywords" content="{{ARTICLE_KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="k1naFcMKtZ0AU2hjBnyOV0ByIwQiO-JKxBl57AOcdxU">
-    <meta name="yandex-verification" content="b74da46172da2195">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <meta name="yandex-verification" content="{{YANDEX_VERIFICATION_CODE}}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{ARTICLE_URL}}">
+
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://fotoekskursii-v-habarovske.vercel.app">
-    <meta property="og:title" content="Лучшие Фотоэкскурсии в Хабаровске">
-    <meta property="og:description" content="Лучшие Фотоэкскурсии в Хабаровске на 2026 год">
-    <meta property="og:image" content="https://fotoekskursii-v-habarovske.vercel.app/icon.png">
-    <meta property="og:site_name" content="Лучшие Фотоэкскурсии в Хабаровске">
+    <meta property="og:url" content="{{ARTICLE_URL}}">
+    <meta property="og:title" content="{{ARTICLE_TITLE}}">
+    <meta property="og:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:locale" content="ru_RU">
-    <meta property="article:published_time" content="2026-01-10T21:13:20+00:00">
-    <meta property="article:author" content="Валентина Плотникова">
+    <meta property="article:published_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:modified_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:author" content="{{AUTHOR_NAME}}">
     <meta property="article:section" content="Статьи">
-    
-    <!-- Twitter -->
+    <meta property="article:tag" content="{{ARTICLE_KEYWORDS}}">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://fotoekskursii-v-habarovske.vercel.app">
-    <meta name="twitter:title" content="Лучшие Фотоэкскурсии в Хабаровске">
-    <meta name="twitter:description" content="Лучшие Фотоэкскурсии в Хабаровске на 2026 год">
-    <meta name="twitter:image" content="https://fotoekskursii-v-habarovske.vercel.app/icon.png">
-    <meta name="twitter:creator" content="Валентина Плотникова">
-    
-    <!-- Favicon -->
+    <meta name="twitter:url" content="{{ARTICLE_URL}}">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}}">
+    <meta name="twitter:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    <meta name="twitter:creator" content="{{AUTHOR_NAME}}">
+
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
+
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Лучшие Фотоэкскурсии в Хабаровске",
-        "description": "Лучшие Фотоэкскурсии в Хабаровске на 2026 год",
-        "image": "https://fotoekskursii-v-habarovske.vercel.app/icon.png",
-        "datePublished": "2026-01-10T21:13:20+00:00",
-        "dateModified": "2026-01-10T21:13:20+00:00",
-        "author": {
-            "@type": "Person",
-            "name": "Валентина Плотникова",
-            "description": "Эксперт в области культурного туризма и истории Хабаровска, обладающий более чем десятью годами опыта в проведении экскурсионных программ. Имеет высшее образование в области истории и активно участвует в исследованиях архитектурного наследия региона. Автор множества статей о культурных маршрутах, делится уникальными знаниями о скрытых уголках города, раскрывая его богатую историю через призму архитектуры и местных легенд.",
-            "image": "https://ui-avatars.com/api/?name=Валентина+Плотникова&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Лучшие Фотоэкскурсии в Хабаровске",
-            "url": "https://fotoekskursii-v-habarovske.vercel.app",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://fotoekskursii-v-habarovske.vercel.app/icon.png"
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "image": ["{{OG_IMAGE_URL}}"],
+                "datePublished": "{{PUBLISH_DATE_ISO}}",
+                "dateModified": "{{PUBLISH_DATE_ISO}}",
+                "author": {
+                    "@type": "Person",
+                    "name": {{AUTHOR_NAME_JSON}},
+                    "description": {{AUTHOR_DESCRIPTION_JSON}},
+                    "image": "{{AUTHOR_AVATAR}}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{SITE_URL}}/icon.png"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ARTICLE_URL}}"
+                },
+                "articleSection": "Статьи",
+                "wordCount": {{WORD_COUNT}},
+                "timeRequired": "PT{{READING_TIME}}M",
+                "inLanguage": "ru-RU"
+            },
+            {
+                "@type": "Person",
+                "@id": "{{ARTICLE_URL}}#author",
+                "name": {{AUTHOR_NAME_JSON}},
+                "description": {{AUTHOR_DESCRIPTION_JSON}},
+                "image": "{{AUTHOR_AVATAR}}",
+                "jobTitle": "Эксперт"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": {{SITE_NAME_JSON}},
+                        "item": "{{SITE_URL}}"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Статьи",
+                        "item": "{{SITE_URL}}/articles/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": {{ARTICLE_TITLE_JSON}},
+                        "item": "{{ARTICLE_URL}}"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ARTICLE_URL}}#webpage",
+                "url": "{{ARTICLE_URL}}",
+                "name": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": {{ARTICLE_TITLE_JSON}}
+                },
+                "inLanguage": "ru-RU"
             }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://fotoekskursii-v-habarovske.vercel.app"
-        },
-        "articleSection": "Статьи",
-        "wordCount": 849,
-        "timeRequired": "PT4M"
+        ]
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="article-header">
-            <div class="header-content">
-                <h1 class="article-title" itemprop="headline">Лучшие Фотоэкскурсии в Хабаровске</h1>
-                <div class="article-meta">
-                    <time datetime="2026-01-10T21:13:20+00:00" itemprop="datePublished">10.01.2026</time>
-                    <meta itemprop="dateModified" content="2026-01-10T21:13:20+00:00">
-                    <span class="reading-time" itemprop="timeRequired" content="PT4M">Время чтения: 4 мин</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Author Section -->
-        <section class="author-section" itemscope itemtype="https://schema.org/Person" itemprop="author">
-            <div class="author-card">
-                <div class="author-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Валентина+Плотникова&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true" alt="Валентина Плотникова" itemprop="image" onerror="this.src='https://ui-avatars.com/api/?name=Валентина+Плотникова&size=120&background=4f46e5&color=fff&bold=true'">
-                </div>
-                <div class="author-info">
-                    <div class="author-name" itemprop="name">Валентина Плотникова</div>
-                    <p class="author-description" itemprop="description">Эксперт в области культурного туризма и истории Хабаровска, обладающий более чем десятью годами опыта в проведении экскурсионных программ. Имеет высшее образование в области истории и активно участвует в исследованиях архитектурного наследия региона. Автор множества статей о культурных маршрутах, делится уникальными знаниями о скрытых уголках города, раскрывая его богатую историю через призму архитектуры и местных легенд.</p>
-                    <div class="author-badges">
-                        <span class="badge expert" itemprop="jobTitle">Эксперт</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Article Content -->
-        <article class="article-content" itemscope itemtype="https://schema.org/Article">
-            <meta itemprop="headline" content="Лучшие Фотоэкскурсии в Хабаровске">
-            <meta itemprop="description" content="Лучшие Фотоэкскурсии в Хабаровске на 2026 год">
-            <meta itemprop="datePublished" content="2026-01-10T21:13:20+00:00">
-            <meta itemprop="dateModified" content="2026-01-10T21:13:20+00:00">
-            <meta itemprop="timeRequired" content="PT4M">
-            <meta itemprop="wordCount" content="849">
-            <div class="content-wrapper" itemprop="articleBody">
-                <p><a href="https://experience.tripster.ru/experience/Khabarovsk/23730-pereulki-i-ulicy/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Khabarovsk-23730">Узнать больше</a></p><p>Экскурсии по переулкам и улицам Хабаровска — это возможность погрузиться в атмосферу города, узнать его историю через архитектуру, легенды и современные локации. Маршруты охватывают как центральные улицы, так и скрытые уголки, где сохранилась атмосфера прошлого. Гиды делятся историями о жизни города, рассказывают о значимых объектах и предлагают необычные перспективы.</p><p>Прогулка по старому Хабаровску: от парка имени Горького до набережной Амура</p><p>Маршрут начинается у парка имени Горького и проходит через исторические кварталы, знакомя с культурным наследием города. Вы узнаете, как развивался Хабаровск, какие здания были построены первыми и почему именно здесь появились важнейшие городские объекты. Прогулка заканчивается на живописной набережной Амура.</p><p>Знакомство с историей города<br> Интересные факты об архитектуре<br> Красивые виды на реку</p><p><b>Отзывы</b>: Участники отмечают насыщенную программу, интересные рассказы гида и удобный темп экскурсии.<br> <b>Цена</b>: 2 500 руб. за одного человека</p><p>Тайны центра Хабаровска: международная архитектура и уличное искусство</p><p>Эта экскурсия раскроет вам уникальность центральных улиц Хабаровска, где сочетаются элементы русской, японской и советской архитектуры. Также вы увидите лучшие примеры уличного искусства и узнаете, как современный город сохраняет связь с прошлым через граффити и муралы.</p><p>Разнообразие стилей в архитектуре<br> Современное уличное искусство<br> Авторский взгляд на город</p><p><b>Отзывы</b>: Путешественники хвалят неожиданные детали и увлекательные истории, которые делают прогулку запоминающейся.<br> <b>Цена</b>: 2 800 руб. за одного человека</p><p>Скрытые дворики и уютные кафе Хабаровска</p><p>Погуляйте по малоизвестным местам Хабаровска, где сохранился особенный уют. Экскурсия включает посещение тихих двориков, утопающих в зелени, а также небольшую остановку в одном из стильных местных кафе. Гид расскажет, как менялась городская среда и почему такие места становятся любимыми среди горожан.</p><p>Неочевидные уголки города<br> Возможность попробовать кофе или десерт<br> Личный подход и тёплая атмосфера</p><p><b>Отзывы</b>: Туристы в восторге от неспешного темпа, атмосферы и рекомендаций по локальным заведениям.<br> <b>Цена</b>: 3 200 руб. за одного человека</p><p>Хабаровск глазами фотографа: улицы, фасады и ракурсы</p><p>Фотоэкскурсия для тех, кто хочет увидеть город с другой стороны. Гид-фотограф проведёт вас по самым живописным улицам, покажет интересные ракурсы и поможет сделать красивые кадры. На маршруте — исторические дома, необычные арт-объекты и природные акценты.</p><p>Профессиональные советы по фотографии<br> Подбор идеальных точек съёмки<br> Новые ракурсы привычных мест</p><p><b>Отзывы</b>: Участники довольны внимательным подходом гида и качеством полученных снимков.<br> <b>Цена</b>: 4 500 руб. за одного человека</p><p>Ночной Хабаровск: светящийся город и тайны улиц</p><p>Необычная вечерняя прогулка по освещённому городу. Экскурсия предлагает взглянуть на Хабаровск в новом свете — буквально и образно. Вы услышите мистические и исторические легенды, посетите самые фотогеничные точки ночного города и прочувствуете его другое настроение.</p><p>Вечерняя атмосфера и подсветка зданий<br> Истории и легенды города<br> Романтическая атмосфера</p><p><b>Отзывы</b>: Многие называют эту экскурсию волшебной и оригинальной находкой.<br> <b>Цена</b>: 3 900 руб. за одного человека</p><p>Хабаровск времен СССР: от сталинских высоток до брошенных зданий</p><p>Узнайте, как Хабаровск развивался в советское время. Маршрут включает посещение зданий разных эпох — от сталинских построек до брошенных объектов, на фоне которых можно сделать необычные фото. Гид расскажет, что происходило с этими местами и почему они остались забытыми.</p><p>Интересная история советского периода<br> Архитектурные шедевры и заброшенные места<br> Авторская подача материала</p><p><b>Отзывы</b>: <b>Отзывы</b> положительные, особенно ценят глубину информации и масштаб исторических справок.<br> <b>Цена</b>: 3 300 руб. за одного человека</p><p>Дворы-сады Хабаровска: зелёные оазисы в сердце города</p><p>Познакомьтесь с уникальными двориками, которые наполнены растениями, цветами и деревьями. Эти зелёные уголки — настоящее спасение от жары летом и место для отдыха круглый год. Гид расскажет, как такие дворы создавались и почему они особенные.</p><p>Оазисы зелени в городе<br> Домашний уют и экология<br> Рассказы о жизни горожан</p><p><b>Отзывы</b>: Посетители отмечают необычность маршрута и романтичную атмосферу.<br> <b>Цена</b>: 2 900 руб. за одного человека</p><p>Индустриальное наследие Хабаровска: фабрики, заводы и заброшенные цеха</p><p>Погрузитесь в историю индустриального развития города. Экскурсия включает посещение старых фабрик и заводов, где когда-то кипела работа. Вы узнаете, как менялось производство и почему некоторые предприятия прекратили своё существование.</p><p>Интересные факты об индустрии<br> Заброшенные цеха и их история<br> Элементы урбанизма</p><p><b>Отзывы</b>: Участники отмечают необычность маршрута и увлекательные рассказы гида.<br> <b>Цена</b>: 3 100 руб. за одного человека</p><p>Легенды и страшилки Хабаровска: улицы с загадками</p><p>Если вы любите мистику и загадочные истории — эта экскурсия для вас. По пути вы услышите страшные легенды о домах, улицах и людях Хабаровска. Это не просто развлечение, но и способ лучше понять городскую культуру и верования.</p><p>Мистические предания и слухи<br> Интересные повороты маршрута<br> Эмоциональное впечатление</p><p><b>Отзывы</b>: Многие туристы называют её самой запоминающейся благодаря атмосфере и рассказам.<br> <b>Цена</b>: 3 400 руб. за одного человека</p><p>Хабаровск в контексте Дальнего Востока: перекрестье культур</p><p>Познакомьтесь с ролью Хабаровска как культурного центра Дальнего Востока. Маршрут включает посещение мест, где чувствуется влияние коренных народов, китайской культуры и даже Японии. Гид объяснит, как формировалось многонациональное лицо города.</p><p>Перекрестье культур и традиций<br> Влияние соседних стран<br> Глубокий исторический контекст</p><p><b>Отзывы</b>: <b>Отзывы</b> в основном положительные, многие отмечают познавательность и неожиданные связи.<br> <b>Цена</b>: 3 700 руб. за одного человека</p><p>Вопросы для закрытия темы Экскурсии по переулкам и улицам Хабаровска»:<br> Какие экскурсии по переулкам и улицам Хабаровска наиболее популярны среди туристов?<br> Какие исторические районы можно посетить на экскурсиях по улицам Хабаровска?<br> Какие экскурсии по переулкам Хабаровска подходят для любителей фотографии?<br> Как выбрать маршрут по улицам Хабаровска для первого знакомства с городом?<br> Какие <b>отзывы</b> оставляют туристы об экскурсиях по переулкам и улицам Хабаровска?<br> Какие экскурсии по Хабаровску включают посещение зелёных и уютных двориков?<br> Какие уличные легенды и мистические истории рассказывают на экскурсиях в Хабаровске?<br> Сколько стоит экскурсия по переулкам Хабаровска в 2025 году?<br> Какие экскурсии по улицам Хабаровска дают представление о межкультурном влиянии?<br> Какие необычные маршруты доступны на экскурсиях по переулкам Хабаровска<br>Реклама. Flight Marketplace Admin FZE. ИНН 9909618947</p>
-            </div>
-        </article>
-
-        <!-- Table Section -->
-        <section class="table-section">
-            <h2 class="section-title">Таблица сравнения</h2>
-            <div class="table-container">
-                <table border="1" cellpadding="5" cellspacing="0">
-    <thead>
-        <tr>
-            <th>Название экскурсии</th>
-            <th>Основные особенности</th>
-            <th>Отзывы</th>
-            <th>Цена</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Прогулка по старому Хабаровску</td>
-            <td>Исторические кварталы, культурное наследие</td>
-            <td>Насыщенная программа, интересные рассказы гида</td>
-            <td>2 500 руб.</td>
-        </tr>
-        <tr>
-            <td>Тайны центра Хабаровска</td>
-            <td>Русская, японская и советская архитектура, уличное искусство</td>
-            <td>Неожиданные детали, увлекательные истории</td>
-            <td>2 800 руб.</td>
-        </tr>
-        <tr>
-            <td>Скрытые дворики и уютные кафе</td>
-            <td>Неочевидные уголки, тихие дворики, стильные кафе</td>
-            <td>Уют и личный подход</td>
-            <td>Информация о цене не указана</td>
-        </tr>
-    </tbody>
-</table>
-            </div>
-        </section>
-
-        
-
-        <!-- Footer -->
-        <footer class="article-footer">
-            <div class="footer-content">
-                <p>&copy; 2026 Валентина Плотникова. Все права защищены.</p>
+    <div class="s-92ed-page-shell">
+        <div class="s-92ed-site-topbar" aria-label="Навигация по статье">
+            <div class="s-92ed-site-topbar__brand">
+                <span class="s-92ed-site-topbar__dot" aria-hidden="true"></span>
                 
             </div>
-        </footer>
+            
+        </div>
+
+        <main class="s-92ed-article-layout">
+            <article class="s-92ed-article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="headline" content="{{ARTICLE_TITLE}}">
+                <meta itemprop="description" content="{{ARTICLE_DESCRIPTION}}">
+                <meta itemprop="datePublished" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="dateModified" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="timeRequired" content="PT{{READING_TIME}}M">
+                <meta itemprop="wordCount" content="{{WORD_COUNT}}">
+                <meta itemprop="mainEntityOfPage" content="{{ARTICLE_URL}}">
+
+                <header class="s-92ed-hero">
+                    <div class="s-92ed-eyebrow-row">
+                        
+                        
+                    </div>
+
+                    <h1 itemprop="headline">{{ARTICLE_TITLE}}</h1>
+                    
+
+                    <div class="s-92ed-meta-grid" aria-label="Ключевая информация о статье">
+
+                        <div class="s-92ed-meta-card">
+                            <div class="s-92ed-meta-label">Дата публикации</div>
+                            <div class="s-92ed-meta-value"><time datetime="{{PUBLISH_DATE_ISO}}">{{PUBLISH_DATE_FORMATTED}}</time></div>
+                        </div>
+                        <div class="s-92ed-meta-card">
+                            <div class="s-92ed-meta-label">Время чтения</div>
+                            <div class="s-92ed-meta-value">{{READING_TIME}} мин</div>
+                        </div>
+                        <div class="s-92ed-meta-card">
+                            <div class="s-92ed-meta-label">Объём текста</div>
+                            <div class="s-92ed-meta-value">{{WORD_COUNT}} слов</div>
+                        </div>
+                    </div>
+
+                    <section class="s-92ed-author-box" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                        <div class="s-92ed-author-avatar">
+                            <img
+                                src="{{AUTHOR_AVATAR}}"
+                                alt="{{AUTHOR_NAME}}"
+                                itemprop="image"
+                                onerror="this.src='https://ui-avatars.com/api/?name={{AUTHOR_NAME_ENCODED}}&size=160&background=f1f5f9&color=111827&bold=true'"
+                            >
+                        </div>
+                        <div class="s-92ed-author-info">
+                            <div class="s-92ed-author-name-row">
+                                <div class="s-92ed-author-name" itemprop="name">{{AUTHOR_NAME}}</div>
+                                <div class="s-92ed-author-badge" itemprop="jobTitle">Эксперт</div>
+                            </div>
+                            <p class="s-92ed-author-description" itemprop="description">{{AUTHOR_DESCRIPTION}}</p>
+                        </div>
+                    </section>
+                </header>
+
+                <div class="s-92ed-article-body">
+                    <div class="s-92ed-article-content">
+
+                        <div class="s-92ed-notion-prose" itemprop="articleBody">
+                            {{ARTICLE_HTML_CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <section class="s-92ed-table-card s-92ed-table-section" aria-labelledby="comparison-title">
+                <div class="s-92ed-section-head">
+                    <h2 id="s-92ed-comparison-title">Таблица сравнения</h2>
+
+                </div>
+
+                <div class="s-92ed-table-wrap">
+                    {{TABLE_CONTENT}}
+                </div>
+            </section>
+
+            <footer class="s-92ed-footer-card s-92ed-article-footer">
+                <div class="s-92ed-footer-inner">
+                    <p>&copy; {{CURRENT_YEAR}}</p>
+                   
+                </div>
+            </footer>
+        </main>
     </div>
+
+
 </body>
 </html>
-
-
